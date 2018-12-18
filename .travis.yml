@@ -3,6 +3,6 @@ services:
   - docker
 
 before_install:
-  - docker build -t FBO/docker-react -f Dockerfile.dev .
+  - docker build -t fbo/docker-react -f Dockerfile.dev .
 script:
   - docker run FBO/docker-react npm run test -- --coverage
